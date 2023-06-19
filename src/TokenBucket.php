@@ -26,12 +26,12 @@ class TokenBucket
      * 漏桶总量
      * @var int
      */
-    protected $burst;
+    protected $burst=60;
     /**
      * 令牌放入速度
      * @var int
      */
-    protected $rate;
+    protected $rate=1;
     /**
      * 记录每次请求的时间
      * @var int
@@ -55,10 +55,13 @@ class TokenBucket
     protected $cachePrefix;
 
     /**
-     * AbstractStrategy constructor.
-     * @param string|null $cachePrefix 关键词
+     * 关键词
+     * TokenBucket constructor.
+     * @param int $burst
+     * @param int $rate
+     * @param string|null $cachePrefix
      */
-    public function __construct(string $cachePrefix = null)
+    public function __construct(int $burst,int $rate,string $cachePrefix = null)
     {
         $this->cachePrefix = $cachePrefix;
     }
