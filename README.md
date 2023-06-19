@@ -1,6 +1,7 @@
 居于thinkphp6 开发的接口限流组件
 
 使用方法
+
 一.先安装插件
 ```php
 composer require cianyi/tp6tokenbucket
