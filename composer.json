@@ -6,6 +6,11 @@
         "topthink/framework": "^6.1.0",
         "topthink/think-orm": "^2.0"
     },
+    "repositories": [{
+        "type": "vcs",
+        "url": "https://gitee.com/cianyi/Tp6tokenbucket.git"
+    }
+    ],
     "license": "MIT",
     "autoload": {
         "psr-4": {
