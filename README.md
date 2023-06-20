@@ -146,4 +146,4 @@ composer require cianyi/tp6flowrestrrictions=1.0.1
 
 
 
-请查阅 [LICENSE.txt](LICENSE.txt)
+请查阅 [LICENSE](LICENSE)
