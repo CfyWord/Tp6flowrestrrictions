@@ -11,10 +11,6 @@ namespace Cianyi\Tp6flowrestrrictions;
 
 /**
  * Class Context
- * @method LeakyBucket|TokenBucket setBurst(int $burst)
- * @method LeakyBucket|TokenBucket setRate(int $rate)
- * @method SlideTimeWindow|SpeedCounter setLimitTime(int $rate)
- * @method SlideTimeWindow|SpeedCounter setMaxCount(int $rate)
  * @method AbstractStrategy  algorithm()
  * @package Cianyi\Tp6flowrestrrictions
  */
@@ -24,7 +20,7 @@ class Context
     /**
      * @param string $strategy
      * @param null $cachePrefix
-     * @return mixed
+     * @return AbstractStrategy
      * @throws FlowRestrictionException
      */
     public static function make(string $strategy, $cachePrefix = null)

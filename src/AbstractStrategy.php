@@ -8,7 +8,14 @@
 
 namespace Cianyi\Tp6flowrestrrictions;
 
-
+/**
+ * Class AbstractStrategy
+ * @package Cianyi\Tp6flowrestrrictions
+ *@method LeakyBucket|TokenBucket setBurst(int $burst)
+ * @method LeakyBucket|TokenBucket setRate(int $rate)
+ * @method SlideTimeWindow|SpeedCounter setLimitTime(int $rate)
+ * @method SlideTimeWindow|SpeedCounter setMaxCount(int $rate)
+ */
 abstract class AbstractStrategy
 {
     /**
