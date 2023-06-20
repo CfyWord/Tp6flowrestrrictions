@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b59d7e62a16b2b62e6a474c74c47de1a",
+    "content-hash": "1fef654cb6c1c1324ed5fda9d5fd0b20",
     "packages": [
         {
             "name": "psr/container",
@@ -322,16 +322,16 @@
         },
         {
             "name": "topthink/think-orm",
-            "version": "v2.0.61",
+            "version": "2.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/top-think/think-orm.git",
-                "reference": "10528ebf4a5106b19c3bac9c6deae7a67ff49de6"
+                "reference": "7ed073d64fd8b89c251575ad1b58968237f4bf47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/top-think/think-orm/zipball/10528ebf4a5106b19c3bac9c6deae7a67ff49de6",
-                "reference": "10528ebf4a5106b19c3bac9c6deae7a67ff49de6",
+                "url": "https://api.github.com/repos/top-think/think-orm/zipball/7ed073d64fd8b89c251575ad1b58968237f4bf47",
+                "reference": "7ed073d64fd8b89c251575ad1b58968237f4bf47",
                 "shasum": ""
             },
             "require": {
@@ -371,9 +371,9 @@
             ],
             "support": {
                 "issues": "https://github.com/top-think/think-orm/issues",
-                "source": "https://github.com/top-think/think-orm/tree/v2.0.61"
+                "source": "https://github.com/top-think/think-orm/tree/2.0"
             },
-            "time": "2023-04-20T14:27:51+00:00"
+            "time": "2023-05-19T10:25:34+00:00"
         }
     ],
     "packages-dev": [],
@@ -382,7 +382,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.2.5"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
 }

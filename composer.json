@@ -1,20 +1,11 @@
 {
-    "name": "cianyi/tp6tokenbucket",
-    "description": "tp6漏桶算法",
+    "name": "cianyi/tp6flowrestrrictions",
+    "description": "tp6限流工具",
     "type": "library",
-    "require": {
-        "topthink/framework": "^6.1.0",
-        "topthink/think-orm": "^2.0"
-    },
-    "repositories": [{
-        "type": "vcs",
-        "url": "https://gitee.com/cianyi/Tp6tokenbucket.git"
-    }
-    ],
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Cianyi\\Tp6tokenbucket\\": "src/"
+            "Cianyi\\Tp6flowrestrrictions\\": "src/"
         }
     },
     "authors": [
@@ -23,5 +14,10 @@
             "email": "18898691409@163.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2.5",
+        "topthink/framework": "^6.1.0",
+        "topthink/think-orm": "^2.0"
+    }
 }
