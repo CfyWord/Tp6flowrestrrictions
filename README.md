@@ -145,5 +145,4 @@ composer require cianyi/tp6flowrestrrictions=1.0.1
 ## 版权信息
 
 
-
-请查阅 [LICENSE](LICENSE)
+请查阅 [LICENSE](https://gitee.com/cianyi/Tp6flowrestrrictions/blob/master/LICENSE)
