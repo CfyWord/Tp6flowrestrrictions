@@ -10,7 +10,7 @@ ThinkPHP 6.0 限流插件
 ## 安装
 
 ~~~
-composer ...
+composer require cianyi/tp6flowrestrrictions=1.0.1
 ~~~
 
 
