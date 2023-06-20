@@ -34,7 +34,7 @@ composer require cianyi/tp6flowrestrrictions=1.0.1
                 $key = "api";
                 //限流策略
                 $strategy = "SpeedCounter";
-                $Content = new Context($strategy, $key);
+                $Content = Context::make($strategy, $key);
                 //每分钟只能发起60次
                 $result = $Content
                     //间隔设置时间
@@ -65,7 +65,7 @@ composer require cianyi/tp6flowrestrrictions=1.0.1
                 $key = "api";
                 //限流策略
                 $strategy = "SlideTimeWindow";
-                $Content = new Context($strategy, $key);
+                $Content = Context::make($strategy, $key);
                 //每隔分钟时间范围内只能请求60次
                 $result = $Content
                     //间隔设置时间
@@ -96,7 +96,7 @@ composer require cianyi/tp6flowrestrrictions=1.0.1
                 $key = "api";
                 //限流策略
                 $strategy = "LeakyBucket";
-                $Content = new Context($strategy, $key);
+                $Content = Context::make($strategy, $key);
                 //每分钟不得超过60个并发数
                 $result = $Content
                     //漏桶容量(最大并发请求数)
@@ -127,7 +127,7 @@ composer require cianyi/tp6flowrestrrictions=1.0.1
                 $key = "api";
                 //限流策略
                 $strategy = "LeakyBucket";
-                $Content = new Context($strategy, $key);
+                $Content = Context::make($strategy, $key);
                 //每隔分钟时间范围内只能请求60次
                 $result = $Content
                     //令牌桶容量(可以存放多少空闲请求)

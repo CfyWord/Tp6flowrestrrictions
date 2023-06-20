@@ -7,7 +7,7 @@ use \Cianyi\Tp6flowrestrrictions\Context;
 $key = "api";
 //限流策略目前支持四种策略(SpeedCounter,LeakyBucket,SlideTimeWindow,TokenBucket)
 $strategy = "SpeedCounter";
-$Content = new Context($strategy, $key);
+$Content =  Context::make($strategy, $key);
 $result = $Content->setLimitTime(60)
     ->setMaxCount(60)
     ->algorithm();

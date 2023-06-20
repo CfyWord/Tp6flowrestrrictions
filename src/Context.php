@@ -15,36 +15,26 @@ namespace Cianyi\Tp6flowrestrrictions;
  * @method LeakyBucket|TokenBucket setRate(int $rate)
  * @method SlideTimeWindow|SpeedCounter setLimitTime(int $rate)
  * @method SlideTimeWindow|SpeedCounter setMaxCount(int $rate)
+ * @method AbstractStrategy  algorithm()
  * @package Cianyi\Tp6flowrestrrictions
  */
 class Context
 {
-    /**
-     * @var AbstractStrategy|null
-     */
-    private $strategy;
 
     /**
-     * Context constructor.
      * @param string $strategy
-     * @param string|null $cachePrefix
+     * @param null $cachePrefix
+     * @return mixed
      * @throws FlowRestrictionException
      */
-    public function __construct(string $strategy, $cachePrefix = null)
+    public static function make(string $strategy, $cachePrefix = null)
     {
         //获取已有的策略
         $data = include_once __DIR__ . DIRECTORY_SEPARATOR . "config.php";
         if (!$data || !isset($data[$strategy])) {
             throw new FlowRestrictionException("strategy not undefined");
         }
-        $this->strategy = new $data[$strategy]($cachePrefix);
+        return new $data[$strategy]($cachePrefix);
     }
 
-    /**
-     * @return bool
-     */
-    public function algorithm()
-    {
-        return $this->strategy->algorithm();
-    }
 }
